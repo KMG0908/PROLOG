@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard"
+        android:title="대시보드"
+        android:icon="@drawable/ic_dashboard_black_24dp"/>
+    <item android:title="차트 보고서">
+    <menu>
+    <group android:id="@+id/list2">
+        <item
+            android:id="@+id/summary"
+            android:title="종합 및 요약"
+            android:icon="@drawable/ic_poll_black_24dp"
+            />
+        <item
+            android:id="@+id/country"
+            android:title="국가"
+            android:icon="@drawable/ic_place_black_24dp"/>
+        <item
+            android:id="@+id/ip"
+            android:title="IP"
+            android:icon="@drawable/ic_wifi_black_24dp"/>
+        <item
+            android:id="@+id/time"
+            android:title="시간"
+            android:icon="@drawable/ic_alarm_on_black_24dp"/>
+        <item
+            android:id="@+id/attack"
+            android:title="공격 유형"
+            android:icon="@drawable/ic_adb_black_24dp"/>
+    </group>
+        </menu>
+    </item>
+    <group android:id="@+id/list3">
+    <item
+        android:id="@+id/table"
+        android:title="테이블 보고서"
+        android:icon="@drawable/ic_list_black_24dp"/>
+    </group>
+    <group android:id="@+id/list4">
+    <item
+        android:id="@+id/report"
+        android:title="보고서"
+        android:icon="@drawable/ic_content_paste_black_24dp"/>
+    </group>
+    <group android:id="@+id/list5">
+    <item
+        android:id="@+id/help"
+        android:title="고객센터"
+        android:icon="@drawable/ic_local_library_black_24dp"/>
+    </group>
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prolog.prolog">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".NotiActivity"
+            android:launchMode="singleTask"
+            android:label="PRO|LOG"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".ChartActivity"
+            android:label="PRO|LOG"
+            ></activity>
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".NavigationActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="대시보드"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AttackActivity"
+            android:label="공격 유형"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="고객센터"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SummaryActivity"
+            android:label="공격 빈도수"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CountryActivity"
+            android:label="국가"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IpActivity"
+            android:label="IP"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimeActivity"
+            android:label="시간"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TableActivity"
+            android:label="테이블 보고서"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReportActivity"
+            android:label="보고서"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TabActivity"></activity>
+        <activity android:name=".BarActivity"
+            android:label="예상 피해도"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
